@@ -21,11 +21,11 @@ model = model.to(device)
 print(f"Model loaded on device: {device}")
 
 async def start(update: Update, context):
-    """Respond to the /start command."""
+  
     await update.message.reply_text("Hello! I am your AI assistant. How can I help you today?")
 
 async def process_message(update: Update, context):
-    """Handle user messages, pass them to the model, and return the response."""
+   
     try:
         user_input = update.message.text
         print(f"User input received: {user_input}")
